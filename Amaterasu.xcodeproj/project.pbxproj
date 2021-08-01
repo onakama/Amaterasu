@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0699C026B03E9C009AEFA1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0699BF26B03E9C009AEFA1 /* ViewModel.swift */; };
+		6AB4F3AD26B02702007E434D /* AmaterasuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4F3AC26B02702007E434D /* AmaterasuApp.swift */; };
+		6AB4F3AF26B02702007E434D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4F3AE26B02702007E434D /* ContentView.swift */; };
+		6AB4F3B126B02705007E434D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4F3B026B02705007E434D /* Assets.xcassets */; };
+		6AB4F3B426B02705007E434D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4F3B326B02705007E434D /* Preview Assets.xcassets */; };
+		6AB4F3BF26B02705007E434D /* AmaterasuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4F3BE26B02705007E434D /* AmaterasuTests.swift */; };
+		6AB4F3CA26B02705007E434D /* AmaterasuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4F3C926B02705007E434D /* AmaterasuUITests.swift */; };
+		6AB4F3D926B03356007E434D /* YumemiWeather in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB4F3D826B03356007E434D /* YumemiWeather */; };
+		6AB4F3DB26B0358B007E434D /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4F3DA26B0358B007E434D /* WeatherModel.swift */; };
+		6AC6EA4626B4FBED0049AC1E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6EA4526B4FBED0049AC1E /* Response.swift */; };
+		6AC6EA4826B500580049AC1E /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6EA4726B500580049AC1E /* WeatherError.swift */; };
+		6AC6EA4C26B56F320049AC1E /* AmaterasuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6EA4B26B56F320049AC1E /* AmaterasuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AB4F3BB26B02705007E434D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB4F3A126B02701007E434D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB4F3A826B02702007E434D;
+			remoteInfo = Amaterasu;
+		};
+		6AB4F3C626B02705007E434D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB4F3A126B02701007E434D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB4F3A826B02702007E434D;
+			remoteInfo = Amaterasu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A0699BF26B03E9C009AEFA1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6AB4F3A926B02702007E434D /* Amaterasu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amaterasu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4F3AC26B02702007E434D /* AmaterasuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaterasuApp.swift; sourceTree = "<group>"; };
+		6AB4F3AE26B02702007E434D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6AB4F3B026B02705007E434D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AB4F3B326B02705007E434D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AB4F3B526B02705007E434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB4F3BA26B02705007E434D /* AmaterasuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaterasuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4F3BE26B02705007E434D /* AmaterasuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaterasuTests.swift; sourceTree = "<group>"; };
+		6AB4F3C026B02705007E434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB4F3C526B02705007E434D /* AmaterasuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaterasuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4F3C926B02705007E434D /* AmaterasuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaterasuUITests.swift; sourceTree = "<group>"; };
+		6AB4F3CB26B02705007E434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB4F3DA26B0358B007E434D /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		6AC6EA4526B4FBED0049AC1E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		6AC6EA4726B500580049AC1E /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
+		6AC6EA4B26B56F320049AC1E /* AmaterasuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaterasuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB4F3A626B02702007E434D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4F3D926B03356007E434D /* YumemiWeather in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3B726B02705007E434D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3C226B02705007E434D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AB4F3A026B02701007E434D = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3AB26B02702007E434D /* Amaterasu */,
+				6AB4F3BD26B02705007E434D /* AmaterasuTests */,
+				6AB4F3C826B02705007E434D /* AmaterasuUITests */,
+				6AB4F3AA26B02702007E434D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB4F3AA26B02702007E434D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3A926B02702007E434D /* Amaterasu.app */,
+				6AB4F3BA26B02705007E434D /* AmaterasuTests.xctest */,
+				6AB4F3C526B02705007E434D /* AmaterasuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB4F3AB26B02702007E434D /* Amaterasu */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3AC26B02702007E434D /* AmaterasuApp.swift */,
+				6AC6EA4B26B56F320049AC1E /* AmaterasuView.swift */,
+				6AB4F3AE26B02702007E434D /* ContentView.swift */,
+				6A0699BF26B03E9C009AEFA1 /* ViewModel.swift */,
+				6AB4F3DA26B0358B007E434D /* WeatherModel.swift */,
+				6AC6EA4526B4FBED0049AC1E /* Response.swift */,
+				6AC6EA4726B500580049AC1E /* WeatherError.swift */,
+				6AB4F3B026B02705007E434D /* Assets.xcassets */,
+				6AB4F3B526B02705007E434D /* Info.plist */,
+				6AB4F3B226B02705007E434D /* Preview Content */,
+			);
+			path = Amaterasu;
+			sourceTree = "<group>";
+		};
+		6AB4F3B226B02705007E434D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3B326B02705007E434D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6AB4F3BD26B02705007E434D /* AmaterasuTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3BE26B02705007E434D /* AmaterasuTests.swift */,
+				6AB4F3C026B02705007E434D /* Info.plist */,
+			);
+			path = AmaterasuTests;
+			sourceTree = "<group>";
+		};
+		6AB4F3C826B02705007E434D /* AmaterasuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4F3C926B02705007E434D /* AmaterasuUITests.swift */,
+				6AB4F3CB26B02705007E434D /* Info.plist */,
+			);
+			path = AmaterasuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AB4F3A826B02702007E434D /* Amaterasu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB4F3CE26B02706007E434D /* Build configuration list for PBXNativeTarget "Amaterasu" */;
+			buildPhases = (
+				6AB4F3A526B02702007E434D /* Sources */,
+				6AB4F3A626B02702007E434D /* Frameworks */,
+				6AB4F3A726B02702007E434D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amaterasu;
+			packageProductDependencies = (
+				6AB4F3D826B03356007E434D /* YumemiWeather */,
+			);
+			productName = Amaterasu;
+			productReference = 6AB4F3A926B02702007E434D /* Amaterasu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AB4F3B926B02705007E434D /* AmaterasuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB4F3D126B02706007E434D /* Build configuration list for PBXNativeTarget "AmaterasuTests" */;
+			buildPhases = (
+				6AB4F3B626B02705007E434D /* Sources */,
+				6AB4F3B726B02705007E434D /* Frameworks */,
+				6AB4F3B826B02705007E434D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AB4F3BC26B02705007E434D /* PBXTargetDependency */,
+			);
+			name = AmaterasuTests;
+			productName = AmaterasuTests;
+			productReference = 6AB4F3BA26B02705007E434D /* AmaterasuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AB4F3C426B02705007E434D /* AmaterasuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB4F3D426B02706007E434D /* Build configuration list for PBXNativeTarget "AmaterasuUITests" */;
+			buildPhases = (
+				6AB4F3C126B02705007E434D /* Sources */,
+				6AB4F3C226B02705007E434D /* Frameworks */,
+				6AB4F3C326B02705007E434D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AB4F3C726B02705007E434D /* PBXTargetDependency */,
+			);
+			name = AmaterasuUITests;
+			productName = AmaterasuUITests;
+			productReference = 6AB4F3C526B02705007E434D /* AmaterasuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB4F3A126B02701007E434D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6AB4F3A826B02702007E434D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6AB4F3B926B02705007E434D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6AB4F3A826B02702007E434D;
+					};
+					6AB4F3C426B02705007E434D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6AB4F3A826B02702007E434D;
+					};
+				};
+			};
+			buildConfigurationList = 6AB4F3A426B02701007E434D /* Build configuration list for PBXProject "Amaterasu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AB4F3A026B02701007E434D;
+			packageReferences = (
+				6AB4F3D726B03356007E434D /* XCRemoteSwiftPackageReference "ios-training" */,
+			);
+			productRefGroup = 6AB4F3AA26B02702007E434D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB4F3A826B02702007E434D /* Amaterasu */,
+				6AB4F3B926B02705007E434D /* AmaterasuTests */,
+				6AB4F3C426B02705007E434D /* AmaterasuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AB4F3A726B02702007E434D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4F3B426B02705007E434D /* Preview Assets.xcassets in Resources */,
+				6AB4F3B126B02705007E434D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3B826B02705007E434D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3C326B02705007E434D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB4F3A526B02702007E434D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4F3AF26B02702007E434D /* ContentView.swift in Sources */,
+				6AC6EA4826B500580049AC1E /* WeatherError.swift in Sources */,
+				6AB4F3DB26B0358B007E434D /* WeatherModel.swift in Sources */,
+				6AC6EA4C26B56F320049AC1E /* AmaterasuView.swift in Sources */,
+				6A0699C026B03E9C009AEFA1 /* ViewModel.swift in Sources */,
+				6AB4F3AD26B02702007E434D /* AmaterasuApp.swift in Sources */,
+				6AC6EA4626B4FBED0049AC1E /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3B626B02705007E434D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4F3BF26B02705007E434D /* AmaterasuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB4F3C126B02705007E434D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4F3CA26B02705007E434D /* AmaterasuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AB4F3BC26B02705007E434D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AB4F3A826B02702007E434D /* Amaterasu */;
+			targetProxy = 6AB4F3BB26B02705007E434D /* PBXContainerItemProxy */;
+		};
+		6AB4F3C726B02705007E434D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AB4F3A826B02702007E434D /* Amaterasu */;
+			targetProxy = 6AB4F3C626B02705007E434D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6AB4F3CC26B02706007E434D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AB4F3CD26B02706007E434D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AB4F3CF26B02706007E434D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Amaterasu/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Amaterasu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.Amaterasu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AB4F3D026B02706007E434D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Amaterasu/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Amaterasu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.Amaterasu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AB4F3D226B02706007E434D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				INFOPLIST_FILE = AmaterasuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.AmaterasuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaterasu.app/Amaterasu";
+			};
+			name = Debug;
+		};
+		6AB4F3D326B02706007E434D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				INFOPLIST_FILE = AmaterasuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.AmaterasuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaterasu.app/Amaterasu";
+			};
+			name = Release;
+		};
+		6AB4F3D526B02706007E434D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				INFOPLIST_FILE = AmaterasuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.AmaterasuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amaterasu;
+			};
+			name = Debug;
+		};
+		6AB4F3D626B02706007E434D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SARQFUQQA;
+				INFOPLIST_FILE = AmaterasuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taisei.AmaterasuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amaterasu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB4F3A426B02701007E434D /* Build configuration list for PBXProject "Amaterasu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4F3CC26B02706007E434D /* Debug */,
+				6AB4F3CD26B02706007E434D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB4F3CE26B02706007E434D /* Build configuration list for PBXNativeTarget "Amaterasu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4F3CF26B02706007E434D /* Debug */,
+				6AB4F3D026B02706007E434D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB4F3D126B02706007E434D /* Build configuration list for PBXNativeTarget "AmaterasuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4F3D226B02706007E434D /* Debug */,
+				6AB4F3D326B02706007E434D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB4F3D426B02706007E434D /* Build configuration list for PBXNativeTarget "AmaterasuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4F3D526B02706007E434D /* Debug */,
+				6AB4F3D626B02706007E434D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AB4F3D726B03356007E434D /* XCRemoteSwiftPackageReference "ios-training" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yumemi-inc/ios-training.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AB4F3D826B03356007E434D /* YumemiWeather */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB4F3D726B03356007E434D /* XCRemoteSwiftPackageReference "ios-training" */;
+			productName = YumemiWeather;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6AB4F3A126B02701007E434D /* Project object */;
+}
