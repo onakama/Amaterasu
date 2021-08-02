@@ -14,6 +14,7 @@ struct ContentView: View {
     @Environment(\.presentationMode) var presentation
     init(){
         self.viewModel = ViewModel()
+        print("contentView")
     }
     
     var body: some View {
@@ -38,7 +39,7 @@ struct ContentView: View {
                 }
                     .frame(width: UIScreen.main.bounds.width/4)
                 Button(action: {
-                    
+                    viewModel.changeWeather()
                 }) {
                     Text("Reload")
                 }
@@ -50,7 +51,6 @@ struct ContentView: View {
             .padding(.top, 80)
         }
         .onReceive(NotificationCenter.default.publisher(for: Notification.Name("scenePhase"))) { ScenePhase in
-            print("\(ScenePhase)")
             viewModel.changeWeather()
         }
     }

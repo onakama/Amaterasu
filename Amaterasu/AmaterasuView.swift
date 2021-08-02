@@ -17,11 +17,6 @@ struct AmaterasuView: View {
         .sheet(isPresented: $isModal,onDismiss:{isModal = true}) {
             ContentView()
         }
-        .onChange(of: scenePhase, perform: { phase in
-            if phase == .active{
-                NotificationCenter.default.post(name: Notification.Name("scenePhase"),object: phase)
-            }
-        })
     }
 }
 

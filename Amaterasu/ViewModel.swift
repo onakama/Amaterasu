@@ -30,7 +30,6 @@ class ViewModel: ObservableObject{
     }
     
     func changeWeather(){
-        print("chageWeather")
         let weatherModel: WeatherModel = WeatherModelImpl()
         let result: Result = weatherModel.fetch(request: requestData)
         switch result{
