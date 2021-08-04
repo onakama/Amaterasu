@@ -14,6 +14,7 @@ class ViewModel: ObservableObject{
     @Published var maxTemp: String
     @Published var minTemp: String
     @Published var isError: Bool = false
+    @Published var isLoading: Bool = false
     private (set) var errorMessage: String = ""
 
     let requestData = """
@@ -30,8 +31,17 @@ class ViewModel: ObservableObject{
     }
     
     func changeWeather(){
+        self.isLoading = true
         let weatherModel: WeatherModel = WeatherModelImpl()
-        let result: Result = weatherModel.fetch(request: requestData)
+        weatherModel.fetch(request: requestData){ result in
+            DispatchQueue.main.async {
+                self.setWeather(result: result)
+                self.isLoading = false
+            }
+        }
+    }
+    
+    func setWeather(result: Result<Response, WeatherError>){
         switch result{
         case .success(let response):
             self.weatherIcon = response.icon

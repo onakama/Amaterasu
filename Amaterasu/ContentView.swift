@@ -10,13 +10,11 @@ import YumemiWeather
 import Foundation
 
 struct ContentView: View {
-    @ObservedObject var viewModel: ViewModel
+    @StateObject var viewModel: ViewModel = ViewModel()
     @Environment(\.presentationMode) var presentation
     init(){
-        self.viewModel = ViewModel()
         print("contentView")
     }
-    
     var body: some View {
         VStack{
             Image(viewModel.weatherIcon)
@@ -31,6 +29,7 @@ struct ContentView: View {
                     .frame(width: UIScreen.main.bounds.width/4)
                     .foregroundColor(.red)
             }
+            ActivityIndicator(isAnimating: viewModel.$isLoading, style: .medium)
             HStack{
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()

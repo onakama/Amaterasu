@@ -10,20 +10,20 @@ import YumemiWeather
 import SwiftUI
 
 protocol WeatherModel{
-    func fetch(request: String) -> Result<Response, WeatherError>
+    func fetch(request: String, completion: @escaping(Result<Response, WeatherError>) -> Void)
 }
 
 
 class WeatherModelImpl: WeatherModel{
-    func fetch(request: String) -> Result<Response, WeatherError>{
-            if let responseAPI: String = try? YumemiWeather.fetchWeather(request){
+    func fetch(request: String, completion: @escaping(Result<Response, WeatherError>) -> Void){
+            if let responseAPI: String = try? YumemiWeather.syncFetchWeather(request){
                 if let response: Response = try? changeIcon(jsonDecode(jsonData: responseAPI)){
-                    return .success(response)
+                    completion(.success(response))
                 }else{
-                    return .failure(WeatherError.jsonDecodeError)
+                    completion(.failure(WeatherError.jsonDecodeError))
                 }
             }else{
-                return .failure(WeatherError.yumemiWeatherError)
+                completion(.failure(WeatherError.yumemiWeatherError))
             }
     }
     

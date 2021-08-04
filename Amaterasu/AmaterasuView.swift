@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct AmaterasuView: View {
-    @Environment(\.scenePhase) private var scenePhase
     @State var isModal: Bool = true
     var body: some View {
-        Button(""){
-            self.isModal = true
-        }
+        Text("")
         .sheet(isPresented: $isModal,onDismiss:{isModal = true}) {
             ContentView()
         }
