@@ -29,7 +29,7 @@ struct ContentView: View {
                     .frame(width: UIScreen.main.bounds.width/4)
                     .foregroundColor(.red)
             }
-            ActivityIndicator(isAnimating: viewModel.$isLoading, style: .medium)
+            .overlay(viewModel.isLoading ? ProgressView("Loading"): nil)
             HStack{
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -42,6 +42,7 @@ struct ContentView: View {
                 }) {
                     Text("Reload")
                 }
+    
                 .frame(width: UIScreen.main.bounds.width/4)
                 .alert(isPresented: $viewModel.isError, content: {
                     Alert(title: Text("アラート"), message: Text(viewModel.errorMessage), dismissButton: .default(Text("OK"),action: {}))
@@ -54,7 +55,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

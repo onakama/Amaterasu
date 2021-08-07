@@ -32,11 +32,13 @@ class ViewModel: ObservableObject{
     
     func changeWeather(){
         self.isLoading = true
-        let weatherModel: WeatherModel = WeatherModelImpl()
-        weatherModel.fetch(request: requestData){ result in
-            DispatchQueue.main.async {
-                self.setWeather(result: result)
-                self.isLoading = false
+            DispatchQueue.global().async {
+            let weatherModel: WeatherModel = WeatherModelImpl()
+                weatherModel.fetch(request: self.requestData){ result in
+                DispatchQueue.main.async {
+                    self.setWeather(result: result)
+                    self.isLoading = false
+                }
             }
         }
     }
